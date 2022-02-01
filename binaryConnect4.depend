@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1643749472 source:c:\users\rauna\documents\c++projects\binaryconnect4\main.cpp
+	<iostream>
+	"matrix.h"
+
+1643751143 c:\users\rauna\documents\c++projects\binaryconnect4\matrix.h
+	<vector>
+
+1643751084 source:c:\users\rauna\documents\c++projects\binaryconnect4\matrix.cpp
+	<iostream>
+	<vector>
+	"matrix.h"
+

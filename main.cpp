@@ -1,9 +1,11 @@
 #include <iostream>
+#include "matrix.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    Matrix board = Matrix();
+    board.printMatrix();
     return 0;
 }
