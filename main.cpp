@@ -19,7 +19,7 @@ int main()
         if(response=='y') {
             break;
         } else if(response=='n') {
-            cout << "bye this software will stalk you";
+            cout << "bye this software will stalk you" << endl;
             return 0;
         } else {
             cout << "input 'y' or 'n'" << endl;

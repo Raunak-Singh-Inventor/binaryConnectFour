@@ -1,5 +1,3 @@
-#include <iostream>
-#include <vector>
 #include "matrix.h"
 
 using namespace std;
@@ -10,13 +8,13 @@ Point::Point (int x, int y) {
 }
 
 Matrix::Matrix () {
-    // create 7 columns * 6 rows matrix
-    for(int i = 0; i < 7; i++) {
-        vector<Point> column = {};
-        for(int j = 0; j < 6; j++) {
-            column.push_back(Point(i,j));
+    // create 6 rows * 7 columns matrix
+    for(int i = 0; i < 6; i++) {
+        vector<Point> row = {};
+        for(int j = 0; j < 7; j++) {
+            row.push_back(Point(i,j));
         }
-        matrix.push_back(column);
+        matrix.push_back(row);
     }
 }
 
@@ -28,4 +26,8 @@ void Matrix::printMatrix () {
         }
         cout << endl;
     }
+}
+
+void Matrix::changePointStatus (Point point, string newStatus) {
+	
 }

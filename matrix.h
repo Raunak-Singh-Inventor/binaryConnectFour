@@ -1,4 +1,6 @@
-#include<vector>
+#include <vector>
+#include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -15,4 +17,5 @@ class Matrix {
 public:
     Matrix();
     void printMatrix();
+	void changePointStatus(Point point, string newStatus);
 };
