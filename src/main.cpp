@@ -37,13 +37,15 @@ int main()
 
 	int column;
 
-	cout << player1 + ", What column to insert chip?: ";
-	cin >> column;
-	board.insertChip(column, '0');
+	while(true) {
+		cout << player1 + ", What column to insert chip?: ";
+		cin >> column;
+		board.insertChip(column, '0');
 
-	cout << player2 + ", What column to insert chip?: ";
-	cin >> column;
-	board.insertChip(column, '1');
+		cout << player2 + ", What column to insert chip?: ";
+		cin >> column;
+		board.insertChip(column, '1');
+	}
 
     return 0;
 }

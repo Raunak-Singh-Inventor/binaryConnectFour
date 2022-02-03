@@ -30,8 +30,9 @@ void Matrix::printMatrix () {
         for(int j = 0; j < (int) matrix[i].size(); j++) {
             cout << "|" << matrix[i][j].status<< "|";
         }
-        cout << endl;
+		cout << endl;
     }
+	cout << "|0||1||2||3||4||5||6|" << endl;
 }
 
 void Matrix::changePointStatus (Point point) {
