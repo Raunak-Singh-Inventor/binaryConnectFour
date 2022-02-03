@@ -26,7 +26,24 @@ int main()
         }
     }
 
-    Board board = Board();
-    board.insertChip(6, '1');
+	Board board = Board();
+
+	cout << "What is your name, young one?: ";
+	string player1 = "";
+	cin >> player1;
+	cout << "What is your name, young two?: ";
+	string player2 = "";
+	cin >> player2;
+
+	int column;
+
+	cout << player1 + ", What column to insert chip?: ";
+	cin >> column;
+	board.insertChip(column, '0');
+
+	cout << player2 + ", What column to insert chip?: ";
+	cin >> column;
+	board.insertChip(column, '1');
+
     return 0;
 }

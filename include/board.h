@@ -4,8 +4,8 @@
 #include "matrix.h"
 
 class Board: public Matrix {
-    public:
-        void insertChip (int column, char status);
+public:
+    void insertChip (int column, char status);
 };
 
 #endif // BOARD_H

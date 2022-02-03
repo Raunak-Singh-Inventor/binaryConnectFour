@@ -24,10 +24,6 @@ Matrix::Matrix () {
     }
 }
 
-vector<vector<Point>> Matrix::getMatrix () {
-    return matrix;
-}
-
 void Matrix::printMatrix () {
     // print the matrix for user
     for(int i = 0; i < (int) matrix.size(); i++) {

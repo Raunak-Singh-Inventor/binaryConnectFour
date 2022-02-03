@@ -17,13 +17,12 @@ public:
 };
 
 class Matrix {
-    vector<vector<Point>> matrix;
+protected:
+	vector<vector<Point>> matrix;
+	void changePointStatus(Point point);
 public:
     Matrix();
     void printMatrix();
-    vector<vector<Point>> getMatrix();
-protected:
-	void changePointStatus(Point point);
 };
 
 #endif // MATRIX_H
