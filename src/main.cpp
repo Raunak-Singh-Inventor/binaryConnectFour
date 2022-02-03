@@ -1,5 +1,5 @@
 #include <iostream>
-#include "matrix.h"
+#include "../include/board.h"
 
 using namespace std;
 
@@ -26,10 +26,7 @@ int main()
         }
     }
 
-    Matrix board = Matrix();
-    board.printMatrix();
-
-
-
+    Board board = Board();
+    board.insertChip(6, '1');
     return 0;
 }

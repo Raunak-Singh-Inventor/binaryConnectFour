@@ -1,10 +1,16 @@
-#include "matrix.h"
+#include "../include/matrix.h"
 
 using namespace std;
 
-Point::Point (int x, int y) {
-    col = x;
-    row = y;
+Point::Point (int row, int col) {
+    this->row = row;
+    this->col = col;
+}
+
+Point::Point (int row, int col, char status) {
+    this->row = row;
+    this->col = col;
+    this->status = status;
 }
 
 Matrix::Matrix () {
@@ -18,6 +24,10 @@ Matrix::Matrix () {
     }
 }
 
+vector<vector<Point>> Matrix::getMatrix () {
+    return matrix;
+}
+
 void Matrix::printMatrix () {
     // print the matrix for user
     for(int i = 0; i < (int) matrix.size(); i++) {
@@ -28,6 +38,6 @@ void Matrix::printMatrix () {
     }
 }
 
-void Matrix::changePointStatus (Point point, string newStatus) {
-	
+void Matrix::changePointStatus (Point point) {
+    matrix[point.row][point.col] = point;
 }

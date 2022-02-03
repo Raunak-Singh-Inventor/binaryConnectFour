@@ -11,15 +11,33 @@
 	<vector>
 	"matrix.h"
 
-1643767892 source:c:\users\rauna\documents\c++projects\binaryconnectfour\main.cpp
+1643836305 source:c:\users\rauna\documents\c++projects\binaryconnectfour\main.cpp
 	<iostream>
 	"matrix.h"
 
-1643767892 c:\users\rauna\documents\c++projects\binaryconnectfour\matrix.h
+1643836590 c:\users\rauna\documents\c++projects\binaryconnectfour\matrix.h
 	<vector>
-
-1643767892 source:c:\users\rauna\documents\c++projects\binaryconnectfour\matrix.cpp
 	<iostream>
+	<string>
+
+1643836243 source:c:\users\rauna\documents\c++projects\binaryconnectfour\matrix.cpp
+	"matrix.h"
+
+1643838348 source:c:\users\rauna\documents\c++projects\binaryconnectfour\src\matrix.cpp
+	"../include/matrix.h"
+
+1643839384 c:\users\rauna\documents\c++projects\binaryconnectfour\include\matrix.h
 	<vector>
+	<iostream>
+	<string>
+
+1643837938 source:c:\users\rauna\documents\c++projects\binaryconnectfour\src\main.cpp
+	<iostream>
+	"../include/board.h"
+
+1643839370 source:c:\users\rauna\documents\c++projects\binaryconnectfour\src\board.cpp
+	"../include/board.h"
+
+1643837957 c:\users\rauna\documents\c++projects\binaryconnectfour\include\board.h
 	"matrix.h"
 
