@@ -57,7 +57,7 @@ bool Board::detectWin (char checkStatus) {
                         if(row>=0 && col>=0) {
                             if(matrix[row][col].status==checkStatus) {
                                 counter++;
-                                std::cout << "row: " << row << " col: " << col << " up 1 left 1 counter: " << counter << std::endl;
+                                // std::cout << "row: " << row << " col: " << col << " up 1 left 1 counter: " << counter << std::endl;
                             } else {
                                 break;
                             }
@@ -81,7 +81,7 @@ bool Board::detectWin (char checkStatus) {
                         if(row<matrix.size() && col>=0) {
                             if(matrix[row][col].status==checkStatus) {
                                 counter++;
-                                std::cout << "row: " << row << " col: " << col << " down 1 left 1 counter: " << counter << std::endl;
+                                // std::cout << "row: " << row << " col: " << col << " down 1 left 1 counter: " << counter << std::endl;
                             } else {
                                 break;
                             }
