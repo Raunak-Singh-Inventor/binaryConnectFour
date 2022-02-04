@@ -32,9 +32,11 @@ void Matrix::printMatrix () {
         }
 		cout << endl;
     }
+    cout << "---------------------" << endl;
 	cout << "|0||1||2||3||4||5||6|" << endl;
 }
 
 void Matrix::changePointStatus (Point point) {
+    // change status of given point
     matrix[point.row][point.col] = point;
 }

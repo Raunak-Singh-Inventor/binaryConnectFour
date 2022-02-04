@@ -34,7 +34,6 @@
 		</Compiler>
 		<Unit filename="include/board.h" />
 		<Unit filename="include/matrix.h" />
-		<Unit filename="main.cpp" />
 		<Unit filename="src/board.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/matrix.cpp" />

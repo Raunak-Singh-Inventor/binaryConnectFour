@@ -26,8 +26,6 @@ int main()
         }
     }
 
-	Board board = Board();
-
 	cout << "What is your name, young one?: ";
 	string player1 = "";
 	cin >> player1;
@@ -35,8 +33,10 @@ int main()
 	string player2 = "";
 	cin >> player2;
 
-	int column;
+    Board board = Board();
+	board.printMatrix();
 
+	int column;
 	while(true) {
 		cout << player1 + ", What column to insert chip?: ";
 		cin >> column;
