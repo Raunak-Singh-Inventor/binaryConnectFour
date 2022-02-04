@@ -45,12 +45,20 @@ int main()
                 cout << player1 + " has won!" << endl;
                 break;
             }
+            if(board.detectTie()==true) {
+                cout << "tie, no one won" << endl;
+                break;
+            }
 
             cout << player2 + ", What column to insert chip?: ";
             cin >> column;
             board.insertChip(column, '1');
             if(board.detectWin('1')==true) {
                 cout << player2 + " has won!" << endl;
+                break;
+            }
+            if(board.detectTie()==true) {
+                cout << "tie, no one won" << endl;
                 break;
             }
         }

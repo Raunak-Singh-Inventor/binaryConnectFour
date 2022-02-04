@@ -103,3 +103,14 @@ bool Board::detectWin (char checkStatus) {
 
 	return false;
 }
+
+bool Board::detectTie() {
+    for(int i = 0; i < matrix.size(); i++) { // row
+        for(int j = 0; j < matrix[i].size(); j++) { //col
+            if(matrix[i][j].status=='_') {
+                return false;
+            }
+        }
+    }
+    return true;
+}
