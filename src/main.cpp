@@ -11,49 +11,49 @@ int main()
     cout << "| instead of red and yellow chips, binaryConnect4 uses 1s and 0s |" << endl;
     cout << "------------------------------------------------------------------" << endl;
 
+    cout << "What is your name, young one?: ";
+    string player1 = "";
+    cin >> player1;
+    cout << "What is your name, young two?: ";
+    string player2 = "";
+    cin >> player2;
 
     char response=' ';
     while(true) {
-        cout << "Would you like to start a new game? (y/n): ";
-        cin >> response;
-        if(response=='y') {
-            break;
-        } else if(response=='n') {
-            cout << "bye this software will stalk you" << endl;
-            return 0;
-        } else {
-            cout << "input 'y' or 'n'" << endl;
+        while(true) {
+            cout << "Would you like to start a new game? (y/n): ";
+            cin >> response;
+            if(response=='y') {
+                break;
+            } else if(response=='n') {
+                cout << "bye this software will stalk you" << endl;
+                return 0;
+            } else {
+                cout << "input 'y' or 'n'" << endl;
+            }
+        }
+
+        Board board = Board();
+        board.printMatrix();
+
+        int column;
+        while(true) {
+            cout << player1 + ", What column to insert chip?: ";
+            cin >> column;
+            board.insertChip(column, '0');
+            if(board.detectWin('0')==true) {
+                cout << player1 + " has won!" << endl;
+                break;
+            }
+
+            cout << player2 + ", What column to insert chip?: ";
+            cin >> column;
+            board.insertChip(column, '1');
+            if(board.detectWin('1')==true) {
+                cout << player2 + " has won!" << endl;
+                break;
+            }
         }
     }
-
-	cout << "What is your name, young one?: ";
-	string player1 = "";
-	cin >> player1;
-	cout << "What is your name, young two?: ";
-	string player2 = "";
-	cin >> player2;
-
-    Board board = Board();
-	board.printMatrix();
-
-	int column;
-	while(true) {
-		cout << player1 + ", What column to insert chip?: ";
-		cin >> column;
-		board.insertChip(column, '0');
-		if(board.detectWin('0')==true) {
-            cout << player1 + " has won!";
-            break;
-		}
-
-		cout << player2 + ", What column to insert chip?: ";
-		cin >> column;
-		board.insertChip(column, '1');
-        if(board.detectWin('1')==true) {
-            cout << player2 + " has won!";
-            break;
-		}
-	}
-
     return 0;
 }

@@ -51,13 +51,13 @@ bool Board::detectWin (char checkStatus) {
             if(matrix[i][j].status==checkStatus) {
                 int row = i;
                 int col = j;
-                int counter = 1;
+                int counter = 0;
                 while(true) {
-                    if(i-1>0 && j-1>0) {
-                        if(row>0 && col>0) {
-                            if(matrix[row-1][col-1].status==checkStatus) {
+                    if(i-1>=0 && j-1>=0) {
+                        if(row>=0 && col>=0) {
+                            if(matrix[row][col].status==checkStatus) {
                                 counter++;
-                                // std::cout << "row: " << row << " col: " << col << " up 1 left 1 counter: " << counter << std::endl;
+                                std::cout << "row: " << row << " col: " << col << " up 1 left 1 counter: " << counter << std::endl;
                             } else {
                                 break;
                             }
@@ -75,13 +75,13 @@ bool Board::detectWin (char checkStatus) {
                 }
                 row = i;
                 col = j;
-                counter = 1;
+                counter = 0;
                 while(true) {
-                    if(i+1<matrix.size() && j-1>0) {
-                        if(row < matrix.size() && col > 0) {
+                    if(i+1<matrix.size() && j-1>=0) {
+                        if(row<matrix.size() && col>=0) {
                             if(matrix[row][col].status==checkStatus) {
                                 counter++;
-                                // std::cout << "row: " << row << " col: " << col << " down 1 left 1 counter: " << counter << std::endl;
+                                std::cout << "row: " << row << " col: " << col << " down 1 left 1 counter: " << counter << std::endl;
                             } else {
                                 break;
                             }
