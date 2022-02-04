@@ -41,12 +41,18 @@ int main()
 		cout << player1 + ", What column to insert chip?: ";
 		cin >> column;
 		board.insertChip(column, '0');
-		detectWin();
+		if(board.detectWin('0')==true) {
+            cout << player1 + " has won!";
+            break;
+		}
 
 		cout << player2 + ", What column to insert chip?: ";
 		cin >> column;
 		board.insertChip(column, '1');
-		detectWin();
+        if(board.detectWin('1')==true) {
+            cout << player2 + " has won!";
+            break;
+		}
 	}
 
     return 0;
