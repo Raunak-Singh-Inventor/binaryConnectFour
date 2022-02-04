@@ -10,3 +10,7 @@ void Board::insertChip (int column, char status) {
 		}
 	}
 }
+
+void Board::detectWin () {
+	
+}

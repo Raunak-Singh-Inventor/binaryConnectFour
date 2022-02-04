@@ -6,6 +6,7 @@
 class Board: public Matrix {
 public:
     void insertChip (int column, char status);
+	void detectWin();
 };
 
 #endif // BOARD_H
